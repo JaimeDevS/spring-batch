@@ -31,3 +31,10 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# MySQL
+.data/mysql/data/
+*.sock
+ib_*
+binlog.*
+auto.cnf
