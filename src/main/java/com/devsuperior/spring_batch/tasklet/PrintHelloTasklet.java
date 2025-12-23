@@ -8,19 +8,16 @@ import org.springframework.batch.repeat.RepeatStatus;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import jakarta.annotation.Nullable;
-
 @Component
 @StepScope
 public class PrintHelloTasklet implements Tasklet {
 
-	//@Value("${name}")
-	@Value("#{jobParameters['name']}")
-	private String name;
-	
+	@Value("#{jobParameters['nome']}")
+	private String nome;
+
 	@Override
-	public @Nullable RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
-		System.out.println("Olá " + name + "!");
+	public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
+		System.out.println("Olá, " + nome + " !");
 		return RepeatStatus.FINISHED;
 	}
 
