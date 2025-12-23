@@ -14,7 +14,8 @@ import jakarta.annotation.Nullable;
 @StepScope
 public class PrintHelloTasklet implements Tasklet {
 
-	@Value("${name}")
+	//@Value("${name}")
+	@Value("#{jobParameters['name']}")
 	private String name;
 	
 	@Override
