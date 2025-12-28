@@ -24,7 +24,7 @@ Principais questões a serem pensadas ao trabalhar com um grande volume de dados
 
 Outros pontos chaves para implementação destes sistemas:
 - escalabilidade
-- disponibi8lidade
+- disponibilidade
 - usabilidade
 
 ## Componentes do Spring Batch
