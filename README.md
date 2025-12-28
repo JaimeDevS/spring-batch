@@ -100,3 +100,6 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.batch.jdbc.initialize-schema=always
 ```
 >**OBS** é necessário criar o banco primeiro
+
+Projeto de referência
+https://github.com/devsuperior/hello-world-spring-batch
